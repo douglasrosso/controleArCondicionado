@@ -1,38 +1,82 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  background: #f0f0f0;
+  color: #333;
+}
+
+h1 {
+  margin-bottom: 40px;
+  font-size: 2.5em;
+  color: #444;
+}
+
+.painel-controle {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  text-align: center;
+}
+
+.painel-controle h2 {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  color: #555;
+}
+
+.painel-controle button {
+  background-color: #007bff;
+  border: none;
   color: white;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
 }
 
-.App-link {
-  color: #61dafb;
+.painel-controle button:hover {
+  background-color: #0056b3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.painel-controle .modos button {
+  background-color: #28a745;
+}
+
+.painel-controle .modos button:hover {
+  background-color: #218838;
+}
+
+.painel-controle .velocidades button {
+  background-color: #ffc107;
+}
+
+.painel-controle .velocidades button:hover {
+  background-color: #e0a800;
+}
+
+.controle-temperatura {
+  margin-bottom: 20px;
+}
+
+.controle-modo {
+  margin-bottom: 20px;
+}
+
+.modos button {
+  margin: 5px;
+}
+
+.controle-velocidade {
+  margin-bottom: 20px;
+}
+
+.velocidades button {
+  margin: 5px;
 }
